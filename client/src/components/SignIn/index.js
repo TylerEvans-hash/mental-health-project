@@ -36,7 +36,7 @@ const SignIn = () => {
     return (
         <>
             <div id="custom-form-cont">
-                <div className="c-f-sec p-6">
+                <div className="c-f-sec">
                     <h1 data-testid="h1tag" className="is-size-4 has-text-centered">Sign In</h1>
                     <form id="custom-form" onSubmit={handleSubmit}>
                         <div>
@@ -53,8 +53,8 @@ const SignIn = () => {
                         <button data-testid="button" type="submit">Submit</button>
                     </form>
                 </div>
-                <div className="c-f-sec mt-4 p-4">
-                    <span>Don't have an account?</span> <Link to="/signup">Sign Up</Link>
+                <div className="c-f-sec mt-4 p-4 has-text-centered">
+                    <small>Don't have an account?</small> <Link to="/signup"><small>Sign Up</small></Link>
                 </div>
             </div>
         </>

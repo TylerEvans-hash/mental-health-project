@@ -2,7 +2,7 @@
 
 const Event = ({name, description}) => {
     return (
-        <div className="card" style={{ width: "30%", margin: "30px auto" }}>
+        <div className="event card">
             <header className="card-header">
                 <p className="card-header-title">
                     {name}

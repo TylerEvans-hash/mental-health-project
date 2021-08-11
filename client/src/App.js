@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <section style={{ width: "62%", margin: "50px auto" }}>
+      <section id="main-sec">
         <Switch>
           <Route exact path="/" component={Events} />
           <Route exact path="/events" component={Events} />

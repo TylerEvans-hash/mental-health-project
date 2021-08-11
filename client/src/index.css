@@ -1,4 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+html {
+  background-color: #fafafa;
+}
 
 body {
   margin: 0;
@@ -7,13 +10,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
 }
 
 a {
   margin-left: 30px;
   color: rgb(10, 62, 206);
   cursor: pointer;
+  text-align: center;
 }
 
 #root {
@@ -22,6 +25,18 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+#main-sec {
+  width: 62%;
+  margin: 50px auto;
+}
+
+/* Event */
+.event {
+  width: 30%;
+  margin: 10px auto;
+}
+/* Event end */
 
 /* Form  */
 #custom-form-cont {
@@ -32,6 +47,7 @@ a {
 .c-f-sec {
   width: 100%;
   background-color: #fff;
+  padding: 10%;
 }
 
 #custom-form {
@@ -67,3 +83,39 @@ a {
   cursor: pointer;
 }
 /* Form end  */
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 1030px) {
+  .event {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main-sec {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #custom-form-cont {
+    width: 90%;
+  }
+  .c-f-sec {
+    padding: 10px;
+  }
+  header {
+    margin: 0px auto;
+  }
+  a {
+    margin: auto;
+  }
+  nav {
+    width: 100%;
+    margin-top: 10px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
