@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { validateEmail } from '../../utils/helpers';
 
-const SignUp = () => {
-    const [formState, setFormState] = useState({ name: '', email: '', password: '' });
+const SignIn = () => {
+    const [formState, setFormState] = useState({email: '', password: '' });
 
     const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, password } = formState;
+    const { email, password } = formState;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -37,11 +37,8 @@ const SignUp = () => {
         <>
             <div id="custom-form-cont">
                 <div className="c-f-sec p-6">
-                    <h1 data-testid="h1tag" className="is-size-4 has-text-centered">Sign Up</h1>
+                    <h1 data-testid="h1tag" className="is-size-4 has-text-centered">Sign In</h1>
                     <form id="custom-form" onSubmit={handleSubmit}>
-                        <div>
-                            <input className="f-inp" type="text" name="name" placeholder="name" defaultValue={name} onBlur={handleChange} />
-                        </div>
                         <div>
                             <input className="f-inp" type="email" name="email" placeholder="email" defaultValue={email} onBlur={handleChange} />
                         </div>
@@ -57,11 +54,11 @@ const SignUp = () => {
                     </form>
                 </div>
                 <div className="c-f-sec mt-4 p-4">
-                    <span>Already have an account?</span> <Link to="/signin">Sign In</Link>
+                    <span>Don't have an account?</span> <Link to="/signup">Sign Up</Link>
                 </div>
             </div>
         </>
     );
 }
 
-export default SignUp;
+export default SignIn;

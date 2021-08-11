@@ -52,7 +52,7 @@ a {
 
 .error-text {
   color: red;
-  font-style: italic;
+  font-size: small;
 }
 
 #custom-form button {

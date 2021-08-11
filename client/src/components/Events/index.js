@@ -25,7 +25,7 @@ const Events = () => {
     ];
     return (
         <>
-            <h2 className="is-size-3">Events</h2>
+            <h2 className="is-size-3 has-text-centered mb-6">Events</h2>
             <div className="is-flex is-flex-wrap-wrap" >
                 {
                     events.map(({name, description}, i) => 
