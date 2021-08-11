@@ -24,7 +24,7 @@ const Events = () => {
         },
     ];
     return (
-        <section style={{ width: "62%", margin: "50px auto" }}>
+        <>
             <h2 className="is-size-3">Events</h2>
             <div className="is-flex is-flex-wrap-wrap" >
                 {
@@ -37,7 +37,7 @@ const Events = () => {
                     )
                 }
             </div>
-        </section>
+        </>
     );
 }
 

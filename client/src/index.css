@@ -7,11 +7,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 a {
   margin-left: 30px;
-  color: #000;
+  color: rgb(10, 62, 206);
   cursor: pointer;
 }
 
@@ -21,3 +22,48 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Form  */
+#custom-form-cont {
+  width: 350px;
+  margin: auto;
+}
+
+.c-f-sec {
+  width: 100%;
+  background-color: #fff;
+}
+
+#custom-form {
+  width: 100%;
+  margin: auto;
+}
+
+#custom-form div{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.f-inp {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.error-text {
+  color: red;
+  font-style: italic;
+}
+
+#custom-form button {
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: rgb(4, 11, 109);
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Form end  */
