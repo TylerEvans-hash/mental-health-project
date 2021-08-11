@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <footer class="footer">
-            <div class="content has-text-centered">
+        <footer className="footer">
+            <div className="content has-text-centered">
                 <p>
                     <strong>Mental Health</strong>
                 </p>

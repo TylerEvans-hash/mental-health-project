@@ -7,12 +7,14 @@ import {
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Events from "./components/Events";
 
 
 function App() {
   return (
     <Router>
       <Header />
+      <Events />
       <Footer />
     </Router>
   );
