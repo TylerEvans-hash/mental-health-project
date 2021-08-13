@@ -19,10 +19,6 @@ a {
   text-align: center;
 }
 
-nav ul {
-  color: 
-}
-
 #root {
   height: 100vh;
   display: flex;
@@ -50,9 +46,6 @@ h2 {
   border: 3px solid rgba(0, 162, 255, 0.822);
 }
 
-.Events name {
-
-}
 /* Event end */
 
 /* Form  */

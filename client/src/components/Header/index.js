@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import "bulma/css/bulma.css";
+
 
 import Auth from '../../utils/auth';
 

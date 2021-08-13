@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/react-hooks';
 import { validateEmail } from '../../utils/helpers';
-import "bulma/css/bulma.css";
 
 import { ADD_USER } from '../../utils/mutations';
 import Auth from '../../utils/auth';

@@ -1,4 +1,4 @@
-import "bulma/css/bulma.css";
+
 
 const Footer = () => {
     return (

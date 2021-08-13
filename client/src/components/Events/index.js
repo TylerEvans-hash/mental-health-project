@@ -1,5 +1,4 @@
 import Event from "../Event";
-import "bulma/css/bulma.css";
 
 const Events = () => {
     const events = [
