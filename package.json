@@ -22,5 +22,9 @@
   "homepage": "https://github.com/TylerEvans-hash/mental-health-project#readme",
   "devDependencies": {
     "concurrently": "^6.2.1"
+  },
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "express": "^4.17.1"
   }
 }
