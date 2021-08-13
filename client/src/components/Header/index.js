@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import "bulma/css/bulma.css";
+
 
 const Header =()=> {
     return (

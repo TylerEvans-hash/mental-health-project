@@ -1,4 +1,3 @@
-import "bulma/css/bulma.css";
 
 const Event = ({name, description}) => {
     return (
