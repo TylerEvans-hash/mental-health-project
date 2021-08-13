@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Event } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -21,6 +21,10 @@ const resolvers = {
         user: async (parent, { username }) => {
             return User.findOne({ username })
                 .select('-__v -password');
+        },
+        events: async () => {
+            return Event.find()
+                .select('-__v');
         }
     },
 
@@ -46,6 +50,11 @@ const resolvers = {
 
             const token = signToken(user);
             return { token, user };
+        },
+        addEvent: async (parent, args) => {
+            const event = await Event.create(args);
+
+            return event;
         }
     }
 };
