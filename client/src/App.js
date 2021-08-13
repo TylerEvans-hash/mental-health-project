@@ -6,6 +6,8 @@ import {
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
+import "bulma/css/bulma.css";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Events from "./components/Events";

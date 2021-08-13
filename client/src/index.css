@@ -19,6 +19,10 @@ a {
   text-align: center;
 }
 
+nav ul {
+  color: greenyellow;
+}
+
 #root {
   height: 100vh;
   display: flex;
@@ -46,8 +50,10 @@ a {
 
 .c-f-sec {
   width: 100%;
-  background-color: #fff;
+  background-color:rgb(231, 230, 230);
+  border-radius: 10px;
   padding: 10%;
+  color: rgb(47, 154, 255);
 }
 
 #custom-form {
@@ -66,6 +72,7 @@ a {
   padding: 10px;
 }
 
+
 .error-text {
   color: #f14668;;
   font-size: small;
@@ -78,13 +85,15 @@ a {
   padding: 10px;
   color: #fff;
   font-size: 0.9rem;
-  background-color: rgb(4, 11, 109);
+  background-color: rgb(4, 185, 50);
   font-weight: 600;
   cursor: pointer;
 }
 /* Form end  */
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+
+/* MEDIA QUERY FOR Screens Smaller then 1030px  */
 @media screen and (max-width: 1030px) {
   .event {
     width: 80%;
@@ -97,6 +106,8 @@ a {
   }
 }
 
+
+/* Media Query for Screens Smaller then 450px */
 @media screen and (max-width: 450px) {
   #custom-form-cont {
     width: 90%;
