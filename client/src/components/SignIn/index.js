@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { validateEmail } from '../../utils/helpers';
+import "bulma/css/bulma.css";
 
 const SignIn = () => {
     const [formState, setFormState] = useState({email: '', password: '' });

@@ -32,4 +32,4 @@ const {authMiddleware} = require('./utils/auth');
     })
   );
   return { server, app };
-})
+})()
