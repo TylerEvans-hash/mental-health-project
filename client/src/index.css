@@ -20,7 +20,7 @@ a {
 }
 
 nav ul {
-  color: greenyellow;
+  color: 
 }
 
 #root {
@@ -39,6 +39,19 @@ nav ul {
 .event {
   width: 30%;
   margin: 10px auto;
+  border: 3px solid rgba(0, 162, 255, 0.822);
+  border-radius: 10px;
+}
+
+h2 {
+  color: rgb(47, 154, 255);
+  background-color: rgb(231, 230, 230, 0.3);
+  border-radius: 10px;
+  border: 3px solid rgba(0, 162, 255, 0.822);
+}
+
+.Events name {
+
 }
 /* Event end */
 
@@ -50,10 +63,11 @@ nav ul {
 
 .c-f-sec {
   width: 100%;
-  background-color:rgb(231, 230, 230);
+  background-color:rgb(231, 230, 230, 0.3);
   border-radius: 10px;
   padding: 10%;
   color: rgb(47, 154, 255);
+  border: 3px solid rgba(0, 162, 255, 0.822);
 }
 
 #custom-form {
@@ -68,20 +82,22 @@ nav ul {
 }
 
 .f-inp {
-  border: 1px solid #eee;
+  border: 1px solid rgba(0, 162, 255, 0.822);
   padding: 10px;
+  border-radius: 5px;
 }
 
 
 .error-text {
   color: red;
   font-size: small;
+
 }
 
 #custom-form button {
   border: none;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px;
   color: #fff;
   font-size: 0.9rem;
