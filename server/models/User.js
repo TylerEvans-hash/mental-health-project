@@ -17,7 +17,17 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
-    }
+    },
+    isModerator: {
+        type: Boolean,
+        default: false
+    },
+    events: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Event'
+        }
+    ]
   },
   // set this to use virtual below
   {
