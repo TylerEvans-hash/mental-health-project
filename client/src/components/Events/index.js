@@ -22,15 +22,23 @@ const Events = () => {
             name: "Event 5",
             description: "description 5",
         },
+        {
+            name: "Event 5",
+            description: "description 5",
+        },
+        {
+            name: "Event 5",
+            description: "description 5",
+        },
     ];
     return (
         <>
             <h2 className="is-size-3 has-text-centered mb-6">Events</h2>
-            <div className="is-flex is-flex-wrap-wrap" >
+            <div className="column is-full" >
                 {
-                    events.map(({name, description}, i) => 
-                        <Event 
-                            key={i} 
+                    events.map(({ name, description }, i) =>
+                        <Event
+                            key={i}
                             name={name}
                             description={description}
                         />
