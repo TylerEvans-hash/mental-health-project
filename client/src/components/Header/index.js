@@ -10,10 +10,12 @@ const Header = () => {
             <nav>
                 <ul>
                     {
+                        
+                        
                         Auth.loggedIn() ?
                             (
                                 <>
-                                    <Link to="/donate">Donate</Link>
+                                    <Link to="https://www.sandbox.paypal.com/donate?hosted_button_id=XZB66YKRD5SR4" style={{color: "rgb(4, 185, 50)"}} >Donate</Link>
                                     <Link to="/" onClick={Auth.logout}>Logout</Link>
                                 </>
                             )

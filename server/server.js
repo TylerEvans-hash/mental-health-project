@@ -8,6 +8,9 @@ const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 const {authMiddleware} = require('./utils/auth');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 (async ()=> {
 
   const server = new ApolloServer({ typeDefs, resolvers, context: authMiddleware});

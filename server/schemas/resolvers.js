@@ -2,6 +2,12 @@ const { AuthenticationError } = require('apollo-server-express');
 const { User, Event } = require('../models');
 const { signToken } = require('../utils/auth');
 
+require('dotenv').config();
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+const singleSender = 'test@test.com' // your single sender email goes here for Send Grid
+
 const resolvers = {
   Query: {
     me: async (parent, args, context) => {
@@ -36,6 +42,25 @@ const resolvers = {
     addUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
+      const { email, username } = args;
+
+      const msg= {
+        'to': `${email}`,
+        'from': `${singleSender}`,
+        'subject': 'SendGrid Test',
+        'text': `Hello ${username} This is just a test to make sure SendGrid is working`,
+        'html': '<strong>This is just another test with the html key with node.js</strong>'
+      }
+
+      sgMail
+        .send(msg)
+        .then(() => {
+          console.log('Email Sent');
+        })
+        .catch((err) => {
+          console.error(err);
+          console.error(err.body);
+        });
       
       return { token, user };
     },
