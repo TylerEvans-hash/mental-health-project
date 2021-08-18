@@ -3,6 +3,7 @@
 
 html {
   background-color: #fafafa;
+  background-image: url(../src/assets/background/abstract.jpg);
 }
 
 body {
@@ -15,7 +16,12 @@ body {
 }
 
 header {
+  opacity: 1;
   background-color: rgba(231, 230, 230, 0.3);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 
@@ -25,6 +31,7 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  
 }
 
 
@@ -54,7 +61,7 @@ a {
 
 /* Event */
 .event {
-  width: 30%;
+  width: 90%;
   margin: 10px auto;
   border: 3px solid rgba(0, 162, 255, 0.822);
   border-radius: 10px;
