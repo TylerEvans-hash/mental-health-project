@@ -55,9 +55,6 @@ const Events = () => {
     return (
         <>
             <h2 className="is-size-3 has-text-centered mb-6">Events</h2>
-            <div>
-
-            </div>
             <div className="column is-full" >
                 {
                     events.map(({ name, description, startDate, endDate, address }, i) =>

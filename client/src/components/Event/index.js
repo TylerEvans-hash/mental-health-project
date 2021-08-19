@@ -2,24 +2,24 @@ import Auth from '../../utils/auth';
 
 const Event = ({ name, description, startDate, endDate, address }) => {
     return (
-        <div class="event card">
-            <div class="columns">
-                <div class="card-content column">
-                    <p class="title">
+        <div className="event card">
+            <div className="columns">
+                <div className="card-content column">
+                    <p className="title">
                         {name}
                     </p>
-                    <p class="subtitle">
+                    <p className="subtitle">
                         {startDate} - {endDate}
                     </p>
-                    <p class="subtitle">
+                    <p className="subtitle">
                         {address}
                     </p>
                 </div>
-                <div class="card-content column">
+                <div className="card-content column">
                     {description}
                 </div>
             </div>
-            <footer class="card-footer">
+            <footer className="card-footer">
 
                 {
 
@@ -28,14 +28,14 @@ const Event = ({ name, description, startDate, endDate, address }) => {
                         (
 
                             <>
-                                <button class="button">Recieve Emails</button>
+                                <button className="button">Recieve Emails</button>
                             </>
 
                         )
                         : 
                         (
                             <>
-                                <button class="button" title="Disabled button" disabled>Recieve Emails</button>
+                                <button className="button" title="Disabled button" disabled>Recieve Emails</button>
                             </>
                         )
                 }
