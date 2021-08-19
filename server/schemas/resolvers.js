@@ -6,7 +6,7 @@ require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const singleSender = 'test@test.com' // your single sender email goes here for Send Grid
+const singleSender = 'plancommunityproject@gmail.com';
 
 const resolvers = {
   Query: {
