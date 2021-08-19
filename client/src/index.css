@@ -1,6 +1,5 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
-
 html {
   background-color: #fafafa;
   background-image: url(../src/assets/background/abstract.jpg);
@@ -16,8 +15,8 @@ body {
 }
 
 header {
-  opacity: 1;
-  background-color: rgba(231, 230, 230, 0.3);
+  background-color: rgba(248,248,248);
+  border-bottom: 3px solid rgba(0, 162, 255, 0.822);
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -71,7 +70,7 @@ a {
 
 h2 {
   color: rgb(47, 154, 255);
-  background-color: rgb(231, 230, 230, 0.3);
+  background-color: rgba(248,248,248);
   border-radius: 10px;
   border: 3px solid rgba(0, 162, 255, 0.822);
 }
@@ -86,7 +85,7 @@ h2 {
 
 .c-f-sec {
   width: 100%;
-  background-color:rgb(231, 230, 230, 0.3);
+  background-color:rgba(248,248,248);
   border-radius: 10px;
   padding: 10%;
   color: rgb(47, 154, 255);
