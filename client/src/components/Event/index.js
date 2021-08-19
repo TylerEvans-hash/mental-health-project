@@ -1,6 +1,6 @@
 import Auth from '../../utils/auth';
 
-const Event = ({ name, description, startDate, endDate }) => {
+const Event = ({ name, description, startDate, endDate, address }) => {
     return (
         <div class="event card">
             <div class="columns">
@@ -10,6 +10,9 @@ const Event = ({ name, description, startDate, endDate }) => {
                     </p>
                     <p class="subtitle">
                         {startDate} - {endDate}
+                    </p>
+                    <p class="subtitle">
+                        {address}
                     </p>
                 </div>
                 <div class="card-content column">
@@ -29,9 +32,10 @@ const Event = ({ name, description, startDate, endDate }) => {
                             </>
 
                         )
-                        : (
+                        : 
+                        (
                             <>
-                                Sign in to<button class="button" title="Disabled button" disabled>Recieve Emails</button>
+                                <button class="button" title="Disabled button" disabled>Recieve Emails</button>
                             </>
                         )
                 }
