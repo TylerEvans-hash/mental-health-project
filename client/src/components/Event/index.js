@@ -1,7 +1,8 @@
 
 const Event = ({name, description}) => {
     return (
-        <div className="event card">
+        <div className="event card" onClick={()=> console.log("clicked")}>
+            
             <div className="card-header">
                 <p className="card-header-title">
                     {name}
