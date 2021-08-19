@@ -4,7 +4,7 @@ const Events = () => {
     const events = [
         {
             name: "Event 1",
-            description: "description 1",
+            description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
             startDate: "March 13",
             endDate: "October 23",
         },
