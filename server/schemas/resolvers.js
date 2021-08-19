@@ -6,7 +6,7 @@ require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const singleSender = 'test@test.com' // your single sender email goes here for Send Grid
+const singleSender = 'plancommunityproject@gmail.com';
 
 const resolvers = {
   Query: {
@@ -47,9 +47,23 @@ const resolvers = {
       const msg= {
         'to': `${email}`,
         'from': `${singleSender}`,
-        'subject': 'SendGrid Test',
-        'text': `Hello ${username} This is just a test to make sure SendGrid is working`,
-        'html': '<strong>This is just another test with the html key with node.js</strong>'
+        'subject': 'Welcome to Plan Community!!!',
+        'text': `Hello ${username}! Welcome to Plan Community!!! Our mission here is to bring together those who suffer from Mental Illnesses and those who want to help Support. We thank you for joining the fight against Mental Illnesses. If you would to purchse any tickets please see our events page. If you would like to donate please see the donation page.
+        And again we thank you very much for joining us!!!
+        
+        Plan Community
+        plancommunityproject@gmail.com`,
+        'html': `<strong>Hello ${username}!!!</strong>
+        <br>
+        <br>
+        <strong>Welcome to Plan Community!!! Our mission here is to bring together those who suffer from Mental Illnesses and those who want to</strong>
+        <strong>help Support. We thank you for joining the fight against Mental Illnesses. If you would to purchse any tickets please see our events page. If you would like to donate please see the donation page.</strong>
+        <strong>And again we thank you very much for joining us!!!</strong>
+        <br>
+        <br>
+        <strong>Plan Community</strong>
+        <br>
+        <strong>plancommunityproject@gmail.com</strong>`
       }
 
       sgMail
