@@ -1,18 +1,22 @@
 
-const Event = ({name, description}) => {
+
+const Event = ({ name, description, startDate, endDate }) => {
     return (
-        <div className="event card" onClick={()=> console.log("clicked")}>
-            
-            <div className="card-header">
-                <p className="card-header-title">
+        <div class="event card columns">
+            <div class="card-content column">
+                <p class="title">
                     {name}
                 </p>
+                <p class="subtitle">
+                    {startDate} - {endDate}
+                </p>
             </div>
-            <div className="card-content">
-                <div className="content">
-                    <span>{description}</span>
-                </div>
+            <div class="card-content column">
+                {description}
             </div>
+            <footer class="card-footer">
+                <button class="button">Join</button>
+            </footer>
         </div>
     );
 }
