@@ -1,0 +1,171 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+html {
+  background-color: #fafafa;
+  background-image: url(../src/assets/background/abstract.jpg);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: rgba(248,248,248);
+  border-bottom: 3px solid rgba(0, 162, 255, 0.822);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  
+}
+
+
+header nav ul li {
+  font-weight: 600;
+}
+
+
+a {
+  margin-left: 30px;
+  color: rgb(10, 62, 206);
+  cursor: pointer;
+  text-align: center;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main-sec {
+  width: 62%;
+  margin: 50px auto;
+}
+
+/* Event */
+.event {
+  width: 90%;
+  margin: 10px auto;
+  border: 3px solid rgba(0, 162, 255, 0.822);
+  border-radius: 10px;
+}
+
+
+
+h2 {
+  color: rgb(47, 154, 255);
+  background-color: rgba(248,248,248);
+  border-radius: 10px;
+  border: 3px solid rgba(0, 162, 255, 0.822);
+}
+
+/* Event end */
+
+/* Form  */
+#custom-form-cont {
+  width: 350px;
+  margin: auto;
+}
+
+.c-f-sec {
+  width: 100%;
+  background-color:rgba(248,248,248);
+  border-radius: 10px;
+  padding: 10%;
+  color: rgb(47, 154, 255);
+  border: 3px solid rgba(0, 162, 255, 0.822);
+}
+
+#custom-form {
+  width: 100%;
+  margin: auto;
+}
+
+#custom-form div{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.f-inp {
+  border: 1px solid rgba(0, 162, 255, 0.822);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.error-text {
+  color: #f14668;;
+  font-size: small;
+
+}
+
+#custom-form button {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: rgb(4, 185, 50);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Form end  */
+
+
+
+/* MEDIA QUERY FOR Screens Smaller then 1030px  */
+@media screen and (max-width: 1030px) {
+  .event {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main-sec {
+    width: 90%;
+  }
+}
+
+
+/* Media Query for Screens Smaller then 450px */
+@media screen and (max-width: 450px) {
+  #custom-form-cont {
+    width: 90%;
+  }
+  .c-f-sec {
+    padding: 10px;
+  }
+  header {
+    margin: 0px auto;
+  }
+  a {
+    margin: auto;
+  }
+  nav {
+    width: 100%;
+    margin-top: 10px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
