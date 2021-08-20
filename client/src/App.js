@@ -24,7 +24,7 @@ const client = new ApolloClient({
       }
     });
   },
-  uri: 'http://localhost:3001/graphql'
+  uri: 'https://plan-community.herokuapp.com/graphql'
 });
 
 
