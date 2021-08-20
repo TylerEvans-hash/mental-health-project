@@ -15,7 +15,7 @@ const Header = () => {
                         Auth.loggedIn() ?
                             (
                                 <>
-                                    <Link to="https://www.sandbox.paypal.com/donate?hosted_button_id=XZB66YKRD5SR4" style={{color: "rgb(4, 185, 50)"}} >Donate</Link>
+                                    <a href="https://www.sandbox.paypal.com/donate?hosted_button_id=XZB66YKRD5SR4" style={{color: "rgb(4, 185, 50)"}} >Donate</a>
                                     <Link to="/" onClick={Auth.logout}>Logout</Link>
                                 </>
                             )

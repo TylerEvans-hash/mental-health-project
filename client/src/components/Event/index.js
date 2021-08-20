@@ -28,7 +28,7 @@ const Event = ({ name, description, startDate, endDate, address }) => {
                         (
 
                             <>
-                                <button className="button">Recieve Emails</button>
+                                <button className="button">Receive Emails</button>
                             </>
 
                         )

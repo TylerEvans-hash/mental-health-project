@@ -51,6 +51,27 @@ const Events = () => {
             endDate: "6:30pm",
             address: "623 N. Easy St. Nowhere, AZ 45987",
         },
+        {
+            name: "Nature Walk",
+            description: "Love nature? Go for a walk in a group to explore new areas together in a safe environment. Meet new people with the same interest as you. Please bring plenty of water and a small snack just in case you get hungry. We will make stops along the trail to catch our breath and take in the views!",
+            startDate: "September 5, 12:30pm",
+            endDate: "2:30pm",
+            address: "1197 W. Rabbit Trail Rd. West Lake, AZ 48519",
+        },
+        {
+            name: "Suicide Prevention Awareness Week! ",
+            description: "Suicide awareness week starts on September 5th and ends on September 11th. We want to spread awareness to help those who need it most. Offering resources how to find help, how to try and prevent it, and what leads someone to suicide. With spreading awareness we can help our communities to grow and be stronger.",
+            startDate: "September 5, 3:30pm",
+            endDate: "5:30pm",
+            address: "374 N. Happy Ave. Nowhere, AZ 45987",
+        },
+        {
+            name: "Mountain Biking Trail Run",
+            description: "Do you enjoy mountain biking? Come join us on the trail together and meet others that like riding as much as you do. Interact with your community make new friends with similar interest. Please bring your own mountain bike and plenty of water to stay hydrated. Also safety gear such as helmet, gloves, and pads are recommended!",
+            startDate: "September 9, 8:30am",
+            endDate: "10:30am",
+            address: "4865 E. Jaws Trail. Big Mountain, AZ 75896",
+        },
     ];
     return (
         <>
